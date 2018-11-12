@@ -22,6 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'', include('main.urls', namespace='main')),
     url(r'', include('login.urls', namespace='main')),
+    url(r'^auction/', include('auction.urls', namespace='auction')),
 
 ]
 #urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
